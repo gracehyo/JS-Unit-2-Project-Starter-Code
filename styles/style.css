@@ -2,6 +2,7 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  z-index: 10001;
 }
 
 #popUp {
@@ -27,10 +28,22 @@
   background-image: url(../images/ajax_loader.gif);
   background-repeat: no-repeat;
   background-position: center center;
+  z-index: 10001;
+}
+
+#pacman {
+  background-image: url(../images/ajax_loader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position:absolute;
 }
 
 #popUp.loader .container {
-  display: none;
+display:none;
+}
+
+.hidden {
+display:none;
 }
 
 #popUp .container {
